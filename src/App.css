@@ -23,6 +23,7 @@ body {
 }
 
 body {
+  background-color: #f6f6f6;
   max-width: 1800px;
   margin: 0 auto;
   color: var(--col-black-default);
@@ -545,6 +546,214 @@ body {
   border-radius: 3px;
 }
 /* End of Pricing section */
+
+/* course details section */
+.courses-details-section{
+  padding: 3rem;
+  margin: 3rem 0;
+  margin-bottom: 10rem;
+}
+
+.course-detail{
+  background-color: var(--col-white);
+  width: 40rem;
+  padding: 3rem;
+  border-radius: 5px;
+  margin-right: 3rem;
+}
+
+.course-detail__top{
+  display: flex;
+}
+
+.course-detail__svg{
+  --size: 6rem;
+  min-width: var(--size);
+  max-width: var(--size);
+  min-height: var(--size);
+  max-height: var(--size);
+  border-radius: 50%;
+  background-color: var(--col-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.course-detail__svg svg{
+  --size: 4rem;
+  width: var(--size);
+  height: var(--size);
+  fill: var(--col-white);
+}
+
+.course-detail__title{
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: #333;
+  line-height: 1.3;
+}
+
+.course-detail__rating{
+  display: flex;
+  align-items: center;
+  color: var(--col-primary);
+  margin: 1rem 0;
+}
+
+.course-detail__rating span{
+  margin-left: .5rem;
+  font-size: 1.7rem;
+}
+
+.course-detail__rating svg{
+  --size: 1.5rem;
+  width: var(--size);
+  height: var(--size);
+  fill: currentColor;
+}
+
+.teacher{
+  display: flex;
+  align-items: center;
+  margin-bottom: .8rem;
+}
+
+.teacher__image{
+  --size: 5rem;
+  width: var(--size);
+  height: var(--size);
+  margin-right: 1rem;
+}
+
+.teacher__image--img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.teacher__name{
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #888;
+}
+
+.teacher__name span{
+  text-transform: capitalize;
+}
+
+.course-detail__numberofsub{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--col-primary);
+}
+
+.course-detail__pricing{
+  font-size: 1.6rem;
+  color: var(--col-primary);
+  font-weight: bold;
+  padding: 2rem;
+  width: max-content;
+  margin: 2rem auto;
+  text-transform: capitalize;
+  background-color: #f2f2f2b0;
+  background-color: #eee;
+  border-radius: 2px;
+}
+
+.course-detail__link, .course-detail__link:visited{
+  text-decoration: none;
+  display: block;
+  padding: 2rem 4rem;
+  text-transform: uppercase;
+  color: var(--col-primary);
+  border: 2px solid currentColor;
+  font-weight: bold;
+  border-radius: 3px;
+  text-align: center;
+  transition: all .3s ease;
+}
+
+.course-detail__link:hover{
+  background-color: var(--col-primary);
+  color: var(--col-white);
+}
+/* end of course details section */
+
+/* Testimonies section */
+.testimonies-section{
+  padding: 3rem;
+  background-color: #f6f6f6;
+  margin-bottom: 4rem;
+}
+
+.testimonies__container{
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.testimony{
+  padding: 3.5rem;
+  width: 40rem;
+  background-color: var(--col-white);
+  margin-right: 2rem;
+  display: block;
+  transition: all .5s ease;
+}
+
+.testimony__flex{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.testimony__flex >*:not(:last-child){
+  margin-right: 1.8rem;
+}
+
+.testimony__image{
+  --size: 10rem;
+  width: var(--size);
+  height: var(--size);
+}
+
+.testimony__image--img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.testimony__user-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testimony__username{
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.testimony__usercurrposition{
+  font-size: 1.2rem;
+  color: var(--col-primary);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.testimony__text{
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #777;
+  text-align: justify;
+}
+/* End of Testimonies section */
 
 /* blog section */
 .blog-section {
