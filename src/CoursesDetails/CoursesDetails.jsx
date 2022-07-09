@@ -14,6 +14,13 @@ import teacher7 from "../Assets/images/user-3.jpg";
 import teacher8 from "../Assets/images/user-12.jpg";
 import teacher9 from "../Assets/images/user-11.jpg";
 
+const breakPoints = [
+  { width: 1, itemsToShow: 1 },
+  { width: 550, itemsToShow: 1, itemsToScroll: 1 },
+  { width: 768, itemsToShow: 2 },
+  { width: 1200, itemsToShow: 3 },
+];
+
 const CoursesDetails = () => {
   return (
     <section className="courses-details-section">
@@ -23,7 +30,7 @@ const CoursesDetails = () => {
       />
 
       <div className="pop-courses__container">
-        <Carousel itemsToShow={3}>
+        <Carousel itemsToShow={3} breakPoints={breakPoints}>
           <Course
             svgImg={<Envelope />}
             teacherImg={teacher1}

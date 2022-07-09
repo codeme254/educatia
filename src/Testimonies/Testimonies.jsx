@@ -12,11 +12,19 @@ import user10 from "../Assets/images/user-10.jpg";
 import user11 from "../Assets/images/user-11.jpg";
 import user12 from "../Assets/images/user-12.jpg";
 
+const breakPoints = [
+  { width: 1, itemsToShow: 1 },
+  { width: 550, itemsToShow: 1, itemsToScroll: 1 },
+  { width: 768, itemsToShow: 2 },
+  { width: 1200, itemsToShow: 3 },
+];
+
 const Testimonies = () => {
   return (
     <section className="testimonies-section">
       <Title mainTitle="our success stories" subTitle="testimonials" />
       <Carousel
+        breakPoints={breakPoints}
         itemsToShow={3}
         itemsToScroll={1}
         enableTilt={true}
